@@ -17,7 +17,7 @@ Route::get('post/{post}', function($slug){
     return view('post', [
         'post' => file_get_contents(__DIR__ . '/../resources/posts/' . $slug . '.html')
     ]);
-});
+})->where('post', '[A-z_\-]+');
 
 Route::get('/', function () {
     return view('posts');
