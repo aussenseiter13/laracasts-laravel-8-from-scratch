@@ -9,32 +9,11 @@
 
 <body>
     <main>
+        <?php foreach($posts as $post) : ?>
         <article>
-            <a href="/post/my-first-post">My First Post</a>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia saepe quos iusto sit optio
-                explicabo nihil ipsam distinctio. Consequuntur, porro illum! Laudantium tempore in eos asperiores
-                accusamus aliquam, necessitatibus ducimus. Dolores quia harum incidunt nesciunt error! Rem obcaecati qui
-                sapiente tenetur unde odit id, molestias expedita, porro esse culpa.</p>
+            <?= $post ?>
         </article>
-
-        <article>
-            <a href="/post/my-second-post">My Second Post</a>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia saepe quos iusto sit optio
-                explicabo nihil ipsam distinctio. Consequuntur, porro illum! Laudantium tempore in eos asperiores
-                accusamus aliquam, necessitatibus ducimus. Dolores quia harum incidunt nesciunt error! Rem obcaecati qui
-                sapiente tenetur unde odit id, molestias expedita, porro esse culpa.</p>
-        </article>
-
-        <article>
-            <a href="/post/my-third-post">My Third Post</a>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia saepe quos iusto sit optio
-                explicabo nihil ipsam distinctio. Consequuntur, porro illum! Laudantium tempore in eos asperiores
-                accusamus aliquam, necessitatibus ducimus. Dolores quia harum incidunt nesciunt error! Rem obcaecati qui
-                sapiente tenetur unde odit id, molestias expedita, porro esse culpa.</p>
-        </article>
+        <?php endforeach; ?>
     </main>
 </body>
 
