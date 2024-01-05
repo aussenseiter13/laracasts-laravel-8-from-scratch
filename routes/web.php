@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
+use Illuminate\Support\Facades\File;
+use Spatie\YamlFrontMatter\YamlFrontMatter;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,7 @@ use App\Models\Post;
 |
 */
 
-Route::get('post/{post}', function($slug){
+Route::get('posts/{post}', function($slug){
     return view('post', [
         'post' => Post::find($slug)
     ]);
